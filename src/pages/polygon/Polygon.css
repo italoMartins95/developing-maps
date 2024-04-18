@@ -42,7 +42,7 @@
 
 .polygon .image-cod{
     width: calc(100% - 40px);
-    height: 420px;
+    height: 480px;
 
     background-color: #283142;
     color: white;
@@ -52,7 +52,7 @@
     border-radius: 5px;
 
     font-family: 'Roboto Mono';
-    font-size: 14px;
+    font-size: 16px;
 
     overflow-x: scroll;
 }
@@ -68,34 +68,34 @@
 }
 
 .polygon .image-cod > div{
-    width: 880px;
+    width: 950px;
     height: 100%;
 }
 
 .polygon .image-cod.two{
-    height: 370px;    
+    height: 420px;    
 }
 
 .polygon .image-cod.two > div{
-    width: 1400px;
+    width: 1540px;
     height: 100%;
 }
 
 .polygon .image-cod.three{
-    height: 310px;    
+    height: 356px;    
 }
 
 .polygon .image-cod.three > div{
-    width: 1200px;
+    width: 1330px;
     height: 100%;
 }
 
 .polygon .image-cod.four{
-    height: 110px;    
+    height: 126px;    
 }
 
 .polygon .image-cod.four > div{
-    width: 1010px;
+    width: 1160px;
     height: 100%;
 }
 
@@ -390,7 +390,7 @@
     }
 
     .polygon p{
-        font-size: 14px;
+        font-size: 16px;
 
         margin-bottom: 0;
     }
@@ -425,12 +425,11 @@
     }
 
     .polygon h2{
-        font-size: 20px;      
+        font-size: 22px;      
         margin-bottom: 0;
     }
 
     .polygon p{
-        font-size: 14px;
         text-align: justify;
         
         margin-bottom: 0;

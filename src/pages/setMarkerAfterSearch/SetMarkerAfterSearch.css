@@ -27,7 +27,7 @@
 
 .geolocation .image-cod{
     width: calc(100% - 40px);
-    height: 590px;
+    height: 680px;
 
     background-color: #283142;
     color: white;
@@ -37,7 +37,7 @@
     border-radius: 5px;
 
     font-family: 'Roboto Mono';
-    font-size: 14px;
+    font-size: 16px;
 
     overflow-x: scroll;
 }
@@ -74,7 +74,7 @@
 }
 
 .geolocation .image-cod > div{
-    width: 1000px;
+    width: 1086px;
     height: 100%;
 }
 
@@ -131,7 +131,7 @@
     }
 
     .geolocation p{
-        font-size: 14px;
+        font-size: 16px;
 
         margin-bottom: 0;
     }
@@ -152,12 +152,11 @@
     }
 
     .geolocation h2{
-        font-size: 20px;      
+        font-size: 22px;      
         margin-bottom: 0;
     }
 
     .geolocation p{
-        font-size: 14px;
         text-align: justify;
         
         margin-bottom: 0;

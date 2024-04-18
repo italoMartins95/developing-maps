@@ -27,7 +27,7 @@
 
 .geocoding .image-cod{
     width: calc(100% - 40px);
-    height: 330px;
+    height: 380px;
 
     background-color: #283142;
     color: white;
@@ -37,7 +37,7 @@
     border-radius: 5px;
 
     font-family: 'Roboto Mono';
-    font-size: 14px;
+    font-size: 16px;
 
     overflow-x: scroll;
 }
@@ -53,7 +53,7 @@
 }
 
 .geocoding .image-cod > div{
-    width: 1150px;
+    width: 1300px;
     height: 100%;
 }
 
@@ -210,7 +210,7 @@
     }
 
     .geocoding p{
-        font-size: 14px;
+        font-size: 16px;
 
         margin-bottom: 0;
     }
@@ -227,12 +227,11 @@
     }
 
     .geocoding h2{
-        font-size: 20px;      
+        font-size: 22px;      
         margin-bottom: 0;
     }
 
     .geocoding p{
-        font-size: 14px;
         text-align: justify;
         
         margin-bottom: 0;

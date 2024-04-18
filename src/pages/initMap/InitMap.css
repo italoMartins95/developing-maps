@@ -33,7 +33,7 @@
 
 .start-new-map .image-cod{
     width: calc(100% - 40px);
-    height: 250px;
+    height: 270px;
 
     background-color: #283142;
     color: white;
@@ -43,7 +43,7 @@
     border-radius: 5px;
 
     font-family: 'Roboto Mono';
-    font-size: 14px;
+    font-size: 16px;
 
     overflow-x: scroll;
 }
@@ -59,7 +59,7 @@
 }
 
 .start-new-map .image-cod > div{
-    width: 1040px;
+    width: 1080px;
     height: 100%;
 }
 
@@ -163,7 +163,7 @@
     }
 
     .start-new-map p{
-        font-size: 14px;
+        font-size: 16px;
 
         margin-bottom: 0;
     }
@@ -190,19 +190,18 @@
     }
 
     .start-new-map h2{
-        font-size: 20px;      
+        font-size: 22px;      
         margin-bottom: 0;
     }
 
     .start-new-map p{
-        font-size: 14px;
         text-align: justify;
         
         margin-bottom: 0;
     }
 
     .start-new-map ul{
-        font-size: 14px;
+        font-size: 16px;
 
         padding-left: 16px;
         margin-bottom: 0;
@@ -210,18 +209,12 @@
 
     .start-new-map .image-cod{
         width: auto;
-        height: 210px;
+        height: 276px;
 
         margin-top: 14px;
         padding: 10px;
 
-        font-size: 12px;
-
         overflow-x: scroll;
-    }
-
-    .start-new-map .image-cod div{
-        width: 830px;
     }
 
     .start-new-map .image-cod .btn-copy{

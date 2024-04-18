@@ -104,13 +104,13 @@
     }
 
     .review p{
-        font-size: 14px;
+        font-size: 16px;
 
         margin-bottom: 0;
     }
 
     .review ul{
-        font-size: 14px;
+        font-size: 16px;
         font-family: 'Inter';
     }
 
@@ -129,18 +129,16 @@
     }
 
     .review h2{
-        font-size: 20px;      
+        font-size: 22px;      
         margin-bottom: 0;
     }
 
     .review p{
-        font-size: 14px;
         text-align: justify;
         
     }
 
     .review ul{
-        font-size: 12px;
         font-family: 'Inter';
     }
 

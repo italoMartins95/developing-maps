@@ -157,14 +157,14 @@
     }
 
     .geolocation p{
-        font-size: 12px;
+        font-size: 14px;
         text-align: justify;
         
         margin-bottom: 0;
     }
     
     .geolocation .render-myMap{
-        height: 300px;
+        height: 550px;
     }
 
     .geolocation .image-cod .btn-copy{

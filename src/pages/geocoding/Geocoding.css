@@ -232,7 +232,7 @@
     }
 
     .geocoding p{
-        font-size: 12px;
+        font-size: 14px;
         text-align: justify;
         
         margin-bottom: 0;
@@ -244,7 +244,7 @@
     }
 
     .geocoding .result-search .content-result-search{
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .geocoding .image-cod .btn-copy{

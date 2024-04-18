@@ -195,14 +195,14 @@
     }
 
     .start-new-map p{
-        font-size: 12px;
+        font-size: 14px;
         text-align: justify;
         
         margin-bottom: 0;
     }
 
     .start-new-map ul{
-        font-size: 12px;
+        font-size: 14px;
 
         padding-left: 16px;
         margin-bottom: 0;
@@ -246,7 +246,7 @@
     }
 
     .start-new-map .myMap-renderer{
-        height: 300px;
+        height: 550px;
     }    
 
     .font-documentation{

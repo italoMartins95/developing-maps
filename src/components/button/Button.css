@@ -1,0 +1,27 @@
+.button-primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #555555;    
+    color: white;
+
+    border: none;
+    outline: none;
+    padding: 10px;  
+    
+    border-radius: 4px;
+    cursor: pointer;
+    
+    font-size: 14px;
+}
+
+.button-primary svg{
+    font-size: 20px;
+}
+
+.button-primary:disabled{
+    background-color: #c1c1c1;
+    cursor: not-allowed;
+}

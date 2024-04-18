@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: calc(100% - 300px);
+    height: 100%;
+
+    overflow-y: scroll;
+
+    padding: 0 50px;
+}
+
+.home-page h2{
+    width: 100%;
+
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Inter';
+
+    color: #676767;
+    
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.home-page .image-map{
+    width: 62%;
+}
+
+.home-page .image-google{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+
+    width: 90px;
+}
+
+@media only screen and (max-width: 770px) {
+    .home-page{
+        width: calc(100% - 110px);
+        padding: 0 20px;
+    }
+
+    .home-page h2{
+        font-size: 40px;
+    }
+
+    .home-page .image-map{
+        width: 100%;
+    }
+
+    .home-page .image-google{
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .home-page{
+        position: absolute;
+        
+        justify-content: space-between;
+
+        width: 100%;
+
+        padding: 0;
+    }
+
+    .home-page h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .home-page .image-map{
+        width: 90%;
+    }
+
+    .home-page .image-google{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}

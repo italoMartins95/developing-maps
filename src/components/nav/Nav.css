@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+nav{
+    position: fixed;
+
+    width: 200px;
+    height: 100vh;
+
+    background-color: #555555;
+    color: white;
+
+    font-family: 'Inter';
+    user-select: none;
+
+    transition: .5s ease;
+    z-index: 10;
+}
+
+nav .btn-retract , .btn-not-retract{
+    display: none;
+
+    font-size: 30px;
+    color: #555555;
+    
+    cursor: pointer;
+    z-index: 10;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    list-style: none;
+
+    padding: 0 0 40px 10px;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    height: 60px;
+
+    padding-left: 20px;
+
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+nav ul li:hover{
+    background-color: white;
+    color: #555555;
+}
+
+nav ul li svg{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 770px) {
+    nav{
+        width: 70px;
+    }
+
+    nav ul{
+        padding: 0;
+        gap: 10px;
+    }
+
+    nav ul li span{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    nav{
+        width: 200px;
+    }
+
+    nav ul{
+        padding: 0 0 40px 10px;
+    }
+
+    nav ul li span{
+        display: inline;
+    }
+
+    .retract{
+        left: -200px;
+    }
+
+    .not-retract{
+        left: 0;
+    }
+
+    .btn-retract{
+        position: fixed;
+        top: 10px;
+        left: 010px;
+        
+        display: block !important;
+    }
+
+    .btn-not-retract{
+        position: absolute;
+        top: 10px;
+        left: 210px;
+        
+        display: block !important;;
+    }
+}

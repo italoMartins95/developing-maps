@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.polygon{
+    width: calc(100% - 260px);
+    padding: 20px 30px;
+}
+
+.polygon h2{
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #676767;
+}
+
+.polygon p{
+    font-size: 18px;
+    font-family: 'Inter';
+}
+
+.polygon p > span{
+    color: #6A0DAD;
+    font-weight: bold;
+}
+
+.polygon .polygon-image{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.polygon .polygon-image .only-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.polygon .polygon-image .text-image{
+   border-radius: 6px;
+}
+
+.polygon .image-cod{
+    width: calc(100% - 40px);
+    height: 420px;
+
+    background-color: #283142;
+    color: white;
+
+    margin-top: 14px;
+    padding: 20px;
+    border-radius: 5px;
+
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+
+    overflow-x: scroll;
+}
+
+.polygon .image-cod::-webkit-scrollbar {
+    background-color: #555555;
+    height: 4px;
+}
+
+.polygon .image-cod::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.polygon .image-cod > div{
+    width: 880px;
+    height: 100%;
+}
+
+.polygon .image-cod.two{
+    height: 370px;    
+}
+
+.polygon .image-cod.two > div{
+    width: 1400px;
+    height: 100%;
+}
+
+.polygon .image-cod.three{
+    height: 310px;    
+}
+
+.polygon .image-cod.three > div{
+    width: 1200px;
+    height: 100%;
+}
+
+.polygon .image-cod.four{
+    height: 110px;    
+}
+
+.polygon .image-cod.four > div{
+    width: 1010px;
+    height: 100%;
+}
+
+.polygon .image-cod .kwd{
+    color: #78d9ec;
+}
+
+.polygon .image-cod .typ{
+    color: #d7aefb;
+}
+
+.polygon .image-cod .str{
+    color: #9ccc65;
+}
+
+.polygon .image-cod .lit{
+    color: #fbbc04;
+}
+
+.polygon .image-cod .btn-copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 50px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.7;
+
+    color: black;
+
+    font-size: 22px;
+
+    border-radius: 2px;
+    cursor: pointer;
+
+    padding: 6px;    
+}
+
+.polygon .init-drawin-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.polygon .render-myMap{
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+    margin-top: 30px;
+}
+
+.polygon .render-myMap button.first {
+    position: absolute;
+    bottom: 120px;
+}
+
+.polygon .render-myMap button.second {
+    position: absolute;
+    bottom: 70px;
+}
+
+.polygon .render-myMap button.last {
+    position: absolute;
+    bottom: 20px;
+}
+
+.polygon .render-myMap button svg {
+    color: black;
+}
+
+.polygon .render-myMap .content-map{
+    width: 100%;
+    height: 100%;
+}
+
+.polygon .font-documentation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+
+    font-family: 'Inter';
+    font-size: 14px;
+
+    margin-top: 20px;
+    padding-bottom: 0;
+
+    color: black;
+    text-decoration: none;
+}
+
+.polygon .font-documentation svg{
+    font-size: 26px;
+}
+
+.polygon .font-documentation.two{
+    margin-top: 6px;    
+    padding-bottom: 10px;
+}
+
+.btn-google-maps {
+	background: none padding-box white;
+	display: table-cell;
+	border: 0px;
+	margin: 0px;
+	padding: 0;
+	text-transform: none;
+	appearance: none;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	overflow: hidden;
+	text-align: center;
+	height: 40px;
+	vertical-align: middle;
+	color: white;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 18px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+	min-width: 45px;
+	font-weight: 500;
+
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	gap: 8px;
+
+    margin: 0 10px 10px 10px;
+}
+
+.btn-google-maps img{
+    margin-bottom: -1px;
+}
+
+.polygon .window-message {
+	left: 0 !important;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.7);
+    z-index: 11;
+}
+
+.polygon .window-message.array {
+    position: fixed;
+    top: 0;
+}
+
+.polygon .window-message .popup-confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    width: 250px;
+    height: 174px;
+
+    padding: 10px;
+
+    background-color: white;
+    border-radius: 4px;
+
+    font-family: "Helvetica Neue LT Pro", sans-serif;
+    ;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.polygon .window-message.array .popup-confirm.array{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    width: 50%;
+    height: auto;
+
+    margin-top: 20px;
+    padding: 20px;
+
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    font-family: 'Inter';
+}
+
+.polygon .window-message.array .popup-confirm.array .content-array{   
+    width: 100%;
+    max-height: 350px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.polygon .window-message.array .popup-confirm.array .content-array::-webkit-scrollbar {
+    background-color: white;
+    height: 4px;
+}
+
+.polygon .window-message.array .popup-confirm.array .content-array::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 20px;
+}
+
+.polygon .window-message.array .popup-confirm.array .content-array .toggle{
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    
+    color: #6A0DAD;
+    cursor: pointer;
+}
+
+.polygon .window-message .popup-confirm.array .content-array .toggle::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent; /* Tamanho do triângulo */
+    border-bottom: 5px solid transparent; /* Tamanho do triângulo */
+    border-right: 8px solid rgb(110, 110, 110); /* Cor e tamanho do triângulo */
+    margin-right: 5px; /* Espaçamento entre o triângulo e o span */
+    transform: rotate(-60deg);
+    transition: .2s ease;
+}
+
+.polygon .window-message .popup-confirm.array .content-array .toggle.open::before {
+    transform: rotate(30deg); /* Rotação para apontar para baixo */
+}
+
+.polygon .window-message .popup-confirm.array .content-array div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.polygon .window-message.array .popup-confirm.array .object{
+    position: relative;
+    left: 20px;
+}
+
+.polygon .window-message .popup-confirm img{
+    width: 60px;
+}
+
+.polygon .window-message .popup-confirm button {
+    width: 100%;
+
+    background: #555555;    
+    color: white;
+
+    border: none;
+    outline: none;
+    padding: 10px;      
+    margin-left: 0;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1030px) {
+    .polygon .polygon-image{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+        margin-top: 14px;
+    }
+
+    .polygon .render-myMap{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .polygon {
+        width: calc(100% - 130px);
+    }
+
+    .polygon h2{
+        font-size: 26px;
+    }
+
+    .polygon p{
+        font-size: 14px;
+
+        margin-bottom: 0;
+    }
+
+    .polygon .init-drawin-btn{
+        margin-top: 14px;
+    }
+    
+    .polygon .render-myMap{
+        height: 350px;    
+        margin-top: 20px;
+    }
+
+    .polygon .window-message .popup-confirm {
+        height: 152px;
+        font-size: 18px;
+    }
+
+    .polygon .window-message .popup-confirm  img{
+        width: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .polygon{
+        position: absolute;
+
+        width: calc(100% - 30px);
+
+        padding: 40px 15px 0 15px;
+    }
+
+    .polygon h2{
+        font-size: 20px;      
+        margin-bottom: 0;
+    }
+
+    .polygon p{
+        font-size: 12px;
+        text-align: justify;
+        
+        margin-bottom: 0;
+    }
+
+    .polygon .image-cod .btn-copy{
+        right: 30px;
+
+        font-size: 20px;
+        padding: 4px;
+    }
+    
+    .polygon .polygon-image .text-image{
+        width: 100%;
+    }
+
+    .polygon .polygon-image .text-image img{
+        width: 100%;
+    }
+
+    .polygon .font-documentation{
+        position: relative;
+        right: 0;
+        padding-bottom: 10px;
+    }
+    
+    .polygon .render-myMap{
+        height: 300px;
+    }
+
+    
+    .polygon .window-message .popup-confirm {
+        width: 196px;
+        height: 114px;
+        font-size: 12px;
+        line-height: 18px;
+        gap: 8px;
+    }
+
+    .polygon .window-message .popup-confirm img{
+        width: 30px;
+    }
+
+    .polygon .window-message .popup-confirm button{
+        font-size: 12px;
+    }
+
+    .polygon .window-message.array .popup-confirm.array{
+        width: 80%;
+    }
+
+    .polygon .window-message.array .popup-confirm.array .content-array{
+        max-height: 250px;
+    }
+}

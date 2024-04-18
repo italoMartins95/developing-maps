@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.geocoding{
+    width: calc(100% - 260px);
+
+    padding: 20px 30px;
+}
+
+.geocoding h2{
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #676767;
+}
+
+.geocoding p{
+    font-size: 18px;
+    font-family: 'Inter';
+}
+
+.geocoding p > span{
+    color: #6A0DAD;    
+    font-weight: bold;
+}
+
+.geocoding .image-cod{
+    width: calc(100% - 40px);
+    height: 330px;
+
+    background-color: #283142;
+    color: white;
+
+    margin-top: 14px;
+    padding: 20px;
+    border-radius: 5px;
+
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+
+    overflow-x: scroll;
+}
+
+.geocoding .image-cod::-webkit-scrollbar {
+    background-color: #555555;
+    height: 4px;
+}
+
+.geocoding .image-cod::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.geocoding .image-cod > div{
+    width: 1150px;
+    height: 100%;
+}
+
+.geocoding .image-cod .kwd{
+    color: #78d9ec;
+}
+
+.geocoding .image-cod .typ{
+    color: #d7aefb;
+}
+
+.geocoding .image-cod .str{
+    color: #9ccc65;
+}
+
+.geocoding .image-cod .lit{
+    color: #fbbc04;
+}
+
+.geocoding .image-cod .btn-copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 50px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.7;
+
+    color: black;
+
+    font-size: 22px;
+
+    border-radius: 2px;
+    cursor: pointer;
+
+    padding: 6px;    
+}
+
+.geocoding .input-fetch-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 20px;
+}
+
+.geocoding .result-search{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    width: calc(100% - 40px);
+    height: auto;
+
+    margin-top: 20px;
+    padding: 20px;
+
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    font-family: 'Inter';
+
+    overflow-x: scroll;
+}
+
+.geocoding .result-search::-webkit-scrollbar {
+    background-color: white;
+    height: 4px;
+}
+
+.geocoding .result-search::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 20px;
+}
+
+.geocoding .result-search .content-result-search{
+    margin-top: 10px;
+    color: red;
+}
+
+.geocoding .result-search .toggle, .key{
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    
+    color: #6A0DAD;
+    cursor: pointer;
+}
+
+.geocoding .result-search .toggle::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent; /* Tamanho do triângulo */
+    border-bottom: 5px solid transparent; /* Tamanho do triângulo */
+    border-right: 8px solid rgb(110, 110, 110); /* Cor e tamanho do triângulo */
+    margin-right: 5px; /* Espaçamento entre o triângulo e o span */
+    transform: rotate(-60deg);
+    transition: .2s ease;
+}
+
+.geocoding .result-search .toggle.open::before {
+    transform: rotate(30deg); /* Rotação para apontar para baixo */
+}
+
+.geocoding .result-search .object{
+    position: relative;
+    left: 20px;
+}
+
+.geocoding .result-search p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+}
+
+.geocoding .result-search > p svg{
+    color: #e40e0e;
+    cursor: pointer;
+}   
+
+.geocoding .font-documentation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+
+    font-family: 'Inter';
+    font-size: 14px;
+
+    margin-top: 20px;
+    padding-bottom: 10px;
+
+    color: black;
+    text-decoration: none;
+}
+
+.geocoding .font-documentation svg{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+    .geocoding {
+        width: calc(100% - 130px);
+    }
+
+    .geocoding h2{
+        font-size: 26px;
+    }
+
+    .geocoding p{
+        font-size: 14px;
+
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width: 430px) {
+    .geocoding{
+        position: absolute;
+
+        width: calc(100% - 30px);
+
+        padding: 40px 15px 0 15px;
+    }
+
+    .geocoding h2{
+        font-size: 20px;      
+        margin-bottom: 0;
+    }
+
+    .geocoding p{
+        font-size: 12px;
+        text-align: justify;
+        
+        margin-bottom: 0;
+    }
+
+    .geocoding .result-search{
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+
+    .geocoding .result-search .content-result-search{
+        font-size: 11px;
+    }
+
+    .geocoding .image-cod .btn-copy{
+        right: 30px;
+
+        font-size: 20px;
+        padding: 4px;
+    }
+
+}

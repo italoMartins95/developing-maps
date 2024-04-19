@@ -56,9 +56,10 @@ const InitMap = () => {
     <section className="start-new-map">
       <h2>Instanciando um novo mapa com GoogleMap</h2>
       <p>
-        Criar mapas com o GoogleMaps Platform é bem simples. Para começar a criar nossos mapas, vamos utilizar um
-        Objeto do tipo <span>google.maps.Map</span> disponibilizado pelo Google e definir 3 itens
-        importantes:
+        Criar mapas com o GoogleMaps Plataform é bem simples. Para começar a
+        criar nossos mapas, vamos utilizar um Objeto do tipo{" "}
+        <span>google.maps.Map</span> disponibilizado pelo Google e definir 3
+        itens importantes:
       </p>
       <ul>
         <li>O conteiner em que o mapa será exibido;</li>
@@ -66,9 +67,9 @@ const InitMap = () => {
           Onde será o centro do mapa usando coordenadas de geolocalização
           (latitude e longitude);
         </li>
-        <li>O zoom inicial para o mapa.</li>
+        <li>O zoom inicial do mapa.</li>
       </ul>
-      <p>Observe o código a seguir:</p>
+      <p>Observe o código a seguir e veja como isso é feito na prática:</p>
       <aside className="image-cod">
         <span className="btn-copy" onClick={copyCod}>
           <MdOutlineContentCopy />
@@ -153,8 +154,9 @@ const InitMap = () => {
       </aside>
       <aside className="button-area">
         <p>
-          Clique no botão para executar o código e visualize o resultado em
-          seguida!
+          Após executar essa simples função, um novo mapa será exibido dentro da
+          Div indicada e no local definido. Clique no botão para executar o
+          código e visualize o resultado em seguida!
         </p>
         <Button
           text="InitMap"

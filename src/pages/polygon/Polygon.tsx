@@ -54,10 +54,6 @@ const Polygon = () => {
     const newDrawingManager = new google.maps.drawing.DrawingManager({
       drawingMode: google.maps.drawing.OverlayType.POLYGON,
       drawingControl: false,
-      drawingControlOptions: {
-        position: google.maps.ControlPosition.TOP_CENTER,
-        drawingModes: [google.maps.drawing.OverlayType.POLYGON],
-      },
     });
 
     setListnerInDrawingManager(newDrawingManager);
@@ -466,51 +462,6 @@ const Polygon = () => {
               Desabilita a visualização da interface que permite o usuário
               selecionar a ferramenta de desenho;
             </span>
-          </div>
-          <div>
-            <span>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drawingControlOptions: &#123;
-            </span>
-          </div>
-          <div>
-            <span>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:
-              google.maps.ControlPosition.
-            </span>
-            <span className="lit">TOP_CENTER</span>
-            <span>,</span>
-            <span className="str">
-              &nbsp;&nbsp;&nbsp;// Define a posição dos controles;
-            </span>
-          </div>
-          <div>
-            <span>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drawingModes:
-              [
-            </span>
-            <span className="str">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//
-              Define quais ferramentas de desenho estão habilitadas;
-            </span>
-          </div>
-          <div>
-            <span>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;google.maps.drawing.OverlayType.
-            </span>
-            <span className="lit">POLYGON</span>
-            <span>,</span>
-            <span className="str">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Vamos
-              habilitar apenas poligonos;
-            </span>
-          </div>
-          <div>
-            <span>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],{" "}
-            </span>
-          </div>
-          <div>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;, </span>
           </div>
           <div>
             <span>&nbsp;&nbsp;&nbsp;&#125;&#41;;</span>

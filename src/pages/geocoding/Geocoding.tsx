@@ -203,16 +203,12 @@ const Geocoding = () => {
       </p>
       <p>
         Essas informações podem ser muito úteis em mecânismos de
-        autopreenchimento em cadastros diversos.
-      </p>
-      <p>
-        Neste tutorial nós vamos aprender a usar esses dados para interagir com
-        mapas, direcionando-o para o local desejado e até inserindo{" "}
+        autopreenchimento em cadastros diversos. Neste tutorial nós vamos
+        aprender a usar esses dados para interagir com mapas, direcionando-o
+        para o local desejado e até inserindo
         <strong>Marcadores</strong> personalizados.
       </p>
-      <p>
-        Confira os próximos passos que serão abordados nas próximas sessões!
-      </p>
+      <p>Confira os próximos passos que serão abordados nas próximas seções!</p>
       <a
         className="font-documentation"
         href="https://developers.google.com/maps/documentation/javascript/geocoding?hl=pt-br"

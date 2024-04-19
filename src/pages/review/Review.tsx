@@ -84,10 +84,10 @@ const Review = () => {
             GooleMaps Plataform
           </a>
           <AiOutlineLink />
-        </span>{" "}
-        e você vai conseguir aprender muito mais.
+        </span>
+        . Além dos recursos nativos do Google, você também pode usar bibliotecas
+        auxiliares de terceiros como as da lista a seguir:
       </p>
-      <p>Você também pode usar bibliotecas auxiliares como:</p>
       <ul>
         <li>
           <span>
@@ -99,7 +99,7 @@ const Review = () => {
             </a>
             <AiOutlineLink />:
           </span>{" "}
-          biblioteca para React com TypeScript;
+          biblioteca para integração do Goolea Maps no React com TypeScript;
         </li>
         <li>
           <span>
@@ -121,7 +121,7 @@ const Review = () => {
             </a>
             <AiOutlineLink />:
           </span>{" "}
-          esta é outra biblioteca para integração do Google Maps com o Vue.js.;
+          uma biblioteca que fornece integração do Google Maps com o Vue.js.;
         </li>
         <li>
           <span>
@@ -139,15 +139,14 @@ const Review = () => {
         </li>
       </ul>
       <p>
-        Para que utilziar o GoogleMaps Plataform com qualquer uma das
-        bibliotecas mencionadas acima, é necessário obter uma{" "}
-        <span>API_KEY</span> do Google. Crie uma conta no{" "}
+        Para utilziar o GoogleMaps Plataform com qualquer uma das bibliotecas
+        mencionadas acima, é necessário obter uma <span>API_KEY</span> do
+        Google. Crie uma conta no{" "}
         <span>
-          (
           <a target="_blank" href="https://developers.google.com/maps?hl=pt-br">
             GoogleMaps Plataform
           </a>
-          <AiOutlineLink />)
+          <AiOutlineLink />
         </span>{" "}
         e obtenha uma Chave gratuita para realizar testes durante seus estudos.
       </p>

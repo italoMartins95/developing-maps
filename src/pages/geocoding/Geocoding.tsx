@@ -205,7 +205,7 @@ const Geocoding = () => {
         Essas informações podem ser muito úteis em mecânismos de
         autopreenchimento em cadastros diversos. Neste tutorial nós vamos
         aprender a usar esses dados para interagir com mapas, direcionando-o
-        para o local desejado e até inserindo
+        para o local desejado e até inserindo&nbsp;
         <strong>Marcadores</strong> personalizados.
       </p>
       <p>Confira os próximos passos que serão abordados nas próximas seções!</p>
